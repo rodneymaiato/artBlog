@@ -1,0 +1,7 @@
+<div class="featured-image">
+{{ if (resources.GetMatch .Destination) }}
+  <img src="
+  {{ ((resources.GetMatch .Destination).Resize `500x jpg Smart q50`).RelPermalink | safeURL }}
+  " alt="{{ .Text }}" />
+{{ end }}
+</div>
