@@ -6,15 +6,10 @@ enableEmoji: true
 # menu config
 menu:
   main:
-    - name: Posts
-      url: /posts
-      weight: 10
-    - name: Bio
-      url: /bio
+    - name: About
+      url: /about
       weight: 20
-    - name: Tags
-      url: /tags
-      weight: 30
+
 
 markup:
   goldmark:

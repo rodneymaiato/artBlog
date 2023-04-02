@@ -29,12 +29,18 @@
     {{ end }}
     {{ end }}
   </div>
-  <div>
-    {{ with .PrevInSection }}
-    <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }} {{ with .NextInSection }}
+  
+  <div class="prev-next-post-links">
+    <div class="previous-container">
+      <span class="previous-label">Prev...</span>
+    {{ with .PrevInSection }} 
+    <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
+    {{ end }}</div> 
+   <div class="next-container"> 
+      <span class="next-label">...Next</span>
+    {{ with .NextInSection }}
     <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}
+    {{ end }}</div>
   </div>
 </aside>
 {{ end }}
