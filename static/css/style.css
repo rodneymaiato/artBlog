@@ -56,7 +56,6 @@ nav {
 }
 .nav-list-link-item {
   text-decoration: none;
-  font-size: 1.25rem;
 }
 .nav-list-link-item:hover {
   text-decoration: underline;
