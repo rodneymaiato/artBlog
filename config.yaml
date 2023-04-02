@@ -1,23 +1,20 @@
 baseURL: http://rodneymaiato.art
 languageCode: en-us
-title: Rodney Maiato 
+title: Rodney Maiato
 enableEmoji: true
 
 # menu config
 menu:
   main:
-  - name: Rodney Maiato 
-    url: /
-    weight: 10
-  - name: Posts 
-    url: /posts
-    weight: 20
-  - name: About
-    url: /about
-    weight: 30  
-  - name: Contact
-    url: /contact
-    weight: 40
+    - name: Posts
+      url: /posts
+      weight: 10
+    - name: Bio
+      url: /bio
+      weight: 20
+    - name: Tags
+      url: /tags
+      weight: 30
 
 markup:
   goldmark:

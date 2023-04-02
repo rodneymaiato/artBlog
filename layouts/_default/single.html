@@ -5,33 +5,28 @@
   <section>
     <h4 id="date">{{ .Date.Format "Mon Jan 2, 2006" }}</h4>
 
-    
+
   </section>
 
   <article class="content" id="content">
 
-    {{ $image := resources.Get (printf "img/%s" .Params.featured_image) }} 
-    {{ with $image }} 
-    <img src="{{ ($image.Resize "600x jpg Smart q50"
-    ).RelPermalink }}" alt="" class="image-holder" /> 
+    {{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}
+    {{ with $image }}
+    <img src="{{ ($image.Resize " 600x jpg Smart q50" ).RelPermalink }}" alt="" class="image-holder" />
     {{ end }} {{ .Content }}
+    <hr>
   </article>
 </section>
 <aside id="meta">
   <div>
-    <h3>Tags</h3>
-    {{ with .GetTerms "topics" }}
-    <ul id="topics">
-      {{ range . }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-      {{ end }}
-    </ul>
-    {{ end }} {{ with .GetTerms "tags" }}
-    <ul id="tags">
-      {{ range . }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-      {{ end }}
-    </ul>
+    <!-- Tags section -->
+    <h3 class="inline">Tags:</h3>
+    {{ with .GetTerms "tags" }}
+    {{ range . }}
+    <a href="{{ .RelPermalink }}"><button class="tag-button">
+        {{ .LinkTitle }}
+      </button></a></li>
+    {{ end }}
     {{ end }}
   </div>
   <div>
