@@ -59,7 +59,6 @@ nav {
   font-size: 1.25rem;
 }
 .nav-list-link-item:hover {
-  color: rgb(150, 15, 120);
   text-decoration: underline;
   /* font-weight: bold; */
 }
