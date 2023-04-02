@@ -10,6 +10,7 @@ menu:
       url: /about
       weight: 20
 
+summaryLength: 20
 
 markup:
   goldmark:

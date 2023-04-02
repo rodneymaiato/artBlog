@@ -9,7 +9,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: #555; 
+  color: #555;
 }
 .container {
   padding: 1rem;
@@ -46,7 +46,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 .main-index {
   margin: 2rem 0;
@@ -97,8 +97,6 @@ nav {
   margin: 0.25rem 0.25rem 0.25rem 0;
   cursor: pointer;
   color: #555;
-
-
 }
 hr {
   border: 0.5px solid rgb(174, 174, 174);
@@ -116,20 +114,20 @@ img.logo {
   display: flex;
   flex-direction: column;
   justify-content: start;
-
-}.next-container {
+}
+.next-container {
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 .next-label {
   text-align: right;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 
 .previous-label {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 .article-feed-container {
@@ -138,12 +136,13 @@ img.logo {
   display: grid;
   grid-template-columns: auto 1fr;
   margin: 1rem 0;
-  
 }
 .article-feed-link {
-  padding-left: 1rem;
+  display: block;
 }
-
-
-
-
+.article-feed-desc {
+  padding: 0 1rem 0;
+}
+.summary {
+  font-size: 0.85rem;
+}
