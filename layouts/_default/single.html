@@ -23,9 +23,7 @@
     <h3 class="inline">Tags:</h3>
     {{ with .GetTerms "tags" }}
     {{ range . }}
-    <a href="{{ .RelPermalink }}"><button class="tag-button">
-        {{ .LinkTitle }}
-      </button></a></li>
+    <a href="{{ .RelPermalink }}" class="tag-link"><button class="tag-button"> {{ .LinkTitle }} </button></a></li>
     {{ end }}
     {{ end }}
   </div>
