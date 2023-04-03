@@ -1,3 +1,16 @@
 <header>
-    <!-- <p>{{ .Kind }}</p> -->
+    <nav aria-label="Main Navigation">
+        <a href="/">
+          <img src="/img/logo-rm250.png" alt="logo" class="logo" />
+        </a>
+        <ul class="nav-list">
+      
+      
+          {{ range .Site.Menus.main }}
+          <li class="nav-list-item">
+            <a class="nav-list-link-item" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
 </header>
