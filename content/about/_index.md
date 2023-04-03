@@ -10,9 +10,15 @@ Thanks for stopping by! :heart:
 
 I'm Rodney.
 
-I draw, sketch, paint, and play a few musical instruments. I love all mediums of art in audio or visual forms.
+I draw, sketch, paint, and play a few musical instruments.
 
-I still draw, paint and play guitar, and I can't imagine giving it up.
+I'm a huge fan of other artists. A lot of them haven't even made a name for themselves. But for me, it's not about how many prints you sell, how many likes you get, or how much a painting is worth. It's all about expression and how it moves me.
+
+I still draw, paint and play guitar.
+
+I can't imagine giving it up.
+
+Ever.
 
 I grew up in the great city of Montreal, Quebec and was blessed to have been immersed in the French culture. Later in life, I moved to the west coast and I'm grateful to be experiencing that too.
 
