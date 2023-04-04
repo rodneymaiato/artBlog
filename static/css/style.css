@@ -27,7 +27,7 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-family: "Times New Roman", Times, serif;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 h1 {
   font-size: 2rem;
@@ -37,7 +37,7 @@ p {
   line-height: 1.5;
 }
 a {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 .content {
   margin: 2rem 0;
@@ -136,34 +136,26 @@ img.logo {
   font-size: 0.75rem;
   font-weight: bold;
 }
-.article-feed-container {
+.tiles {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 0.6rem;
 }
-.article-feed {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin: 1rem 0;
-}
-.article-feed-link {
-  display: block;
-}
-.article-feed-desc {
-  padding: 0 1rem 0;
-}
-.summary {
-  font-size: 0.85rem;
+.tiles-img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.read-more-link {
-  font-size: .85rem;
-}
 .tag-button {
   background-color: var(--dark);
-  color: var(--light); 
+  color: var(--light);
   border-radius: 5px;
   border: none;
   outline: none;
   text-decoration: none;
-  margin: .25rem .1rem .25rem .1rem;
-  padding: .25rem .5rem;
+  margin: 0.25rem 0.1rem 0.25rem 0.1rem;
+  padding: 0.25rem 0.5rem;
   line-height: 2;
 }
