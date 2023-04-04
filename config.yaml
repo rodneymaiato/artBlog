@@ -10,6 +10,9 @@ menu:
     - name: About
       url: /about
       weight: 20
+    - name: Posts
+      url: /posts
+      weight: 10
 
 summaryLength: 12 
 
