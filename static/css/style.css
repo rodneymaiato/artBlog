@@ -5,11 +5,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --dark: #333;
+  --light: #fff;
+  --primary-color: midnightblue;
+}
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #555;
+  color: var(--dark);
 }
 .container {
   padding: 1rem;
@@ -22,6 +27,7 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-family: "Times New Roman", Times, serif;
+  color: var(--primary-color)
 }
 h1 {
   font-size: 2rem;
@@ -31,7 +37,7 @@ p {
   line-height: 1.5;
 }
 a {
-  color: rgb(247, 44, 114);
+  color: var(--primary-color); 
 }
 .content {
   margin: 2rem 0;
@@ -96,7 +102,7 @@ nav {
   padding: 0.25rem;
   margin: 0.25rem 0.25rem 0.25rem 0;
   cursor: pointer;
-  color: #555;
+  color: var(--dark);
 }
 hr {
   border: 0.5px solid rgb(174, 174, 174);
@@ -151,8 +157,8 @@ img.logo {
   font-size: .85rem;
 }
 .tag-button {
-  background-color: #444;
-  color: rgb(255, 255, 255);
+  background-color: var(--dark);
+  color: var(--light); 
   border-radius: 5px;
   border: none;
   outline: none;

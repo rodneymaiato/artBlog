@@ -2,6 +2,7 @@ baseURL: http://rodneymaiato.art
 languageCode: en-us
 title: Rodney Maiato
 enableEmoji: true
+googleAnalytics: G-GZWZCLTZXH
 
 # menu config
 menu:
