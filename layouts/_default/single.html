@@ -12,7 +12,7 @@
 
     {{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}
     {{ with $image }}
-    <img src="{{ ($image.Resize " 600x jpg Smart q50" ).RelPermalink }}" alt="" class="image-holder" />
+    <img src="{{ ($image.Resize " 600x webp Smart q50" ).RelPermalink }}" alt="" class="image-holder" />
     {{ end }} {{ .Content }}
     <hr>
   </article>

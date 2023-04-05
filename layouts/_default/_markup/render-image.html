@@ -1,7 +1,7 @@
 <div class="featured-image">
   {{ if (resources.GetMatch .Destination) }}
   <img src="
-  {{ ((resources.GetMatch .Destination).Resize `500x jpg Smart q50`).RelPermalink | safeURL }}
+  {{ ((resources.GetMatch .Destination).Resize `500x webp Smart`).RelPermalink | safeURL }}
   " alt="{{ .Text }}" class="image-holder" />
   {{ end }}
 </div>
