@@ -2,15 +2,14 @@
 <main>
   <!--! Ranges through content/posts/*.md -->
 
-  <h2>Posts</h2>
+  <h2>{{ .Title }}</h2>
   
   <div class="tiles">
     {{ range first 9 (where .Site.RegularPages "Type" "in"
     site.Params.mainSections) }}
 
-    <a href="{{ .Permalink }}"
-      >{{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}{{
-      with $image }}<img src="{{ ($image.Fill "400x400" ).RelPermalink }}"
+    <a href="{{ .Permalink }}">{{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}{{
+      with $image }}<img src="{{ ($image.Fill "200x200" ).RelPermalink }}"
       alt="" class="tiles-img" />{{ end }}</a
     >
     {{ end }}
