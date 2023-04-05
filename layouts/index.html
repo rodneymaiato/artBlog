@@ -10,8 +10,8 @@
 
     <a href="{{ .Permalink }}">{{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}{{
       with $image }}<img src="{{ ($image.Fill "200x200" ).RelPermalink }}"
-      alt="" class="tiles-img" />{{ end }}</a
-    >
+      alt="art by rodney maiato" class="tiles-img" /></a
+    >{{ end }}
     {{ end }}
   </div>
 

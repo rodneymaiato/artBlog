@@ -4,6 +4,11 @@ title: Rodney Maiato
 enableEmoji: true
 googleAnalytics: G-GZWZCLTZXH
 
+
+params:
+  author: Rodney Maiato
+  description: Artist Rodney Maiato showcases his sketches and paintings that he creates in portable moleskine sketchbooks.
+
 # menu config
 menu:
   main:
