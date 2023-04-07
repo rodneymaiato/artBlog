@@ -39,9 +39,9 @@ p {
 a {
   color: var(--primary-color);
 }
-.content {
+/* .content {
   margin: 2rem 0;
-}
+} */
 /* navigation menu styles */
 .nav-list {
   display: flex;

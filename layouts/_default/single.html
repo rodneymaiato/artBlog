@@ -1,44 +1,44 @@
 {{ define "main" }}
-
-<section id="main">
-  <h1 id="title">{{ .Title }}</h1>
-  <section>
+<article>
+  <header class="post-header">
+    <h1 id="title">{{ .Title }}</h1>
+  </header>
+  <div class="post-meta">
     <strong><p id="date">{{ .Date.Format "Mon Jan 2, 2006" }}</p></strong>
-
-
-  </section>
-
-  <article class="content" id="content">
-
-    {{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}
-    {{ with $image }}
-    <img src="{{ ($image.Resize " 600x webp Smart q50" ).RelPermalink }}" alt="" class="image-holder" />
-    {{ end }} {{ .Content }}
-    <hr>
-  </article>
-</section>
-<aside id="meta">
-  <div>
-    <!-- Tags section -->
-    <h3 class="inline">Tags:</h3>
-    {{ with .GetTerms "tags" }}
-    {{ range . }}
-    <a href="{{ .RelPermalink }}" class="tag-link"><button class="tag-button"> {{ .LinkTitle }} </button></a></li>
-    {{ end }}
-    {{ end }}
   </div>
-  
-  <div class="prev-next-post-links">
-    <div class="previous-container">
-      <span class="previous-label">Prev...</span>
-    {{ with .PrevInSection }} 
-    <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
-    {{ end }}</div> 
-   <div class="next-container"> 
-      <span class="next-label">...Next</span>
-    {{ with .NextInSection }}
-    <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}</div>
+  <div class="post-content">
+    {{ $image := resources.Get (printf "img/%s" .Params.featured_image) }} {{
+    with $image }} <img src="{{ ($image.Resize " 600x webp Smart q50"
+    ).RelPermalink }}" alt="" class="image-holder" /> {{ end }}
+
+    <!--! Post Content -->
+    {{ .Content }}
+    <!--! End Content -->
   </div>
-</aside>
+  <footer class="post-footer">
+    <div>
+      <!-- Tags section -->
+      <h3 class="inline">Tags:</h3>
+      {{ with .GetTerms "tags" }} {{ range . }}
+      <a href="{{ .RelPermalink }}" class="tag-link"
+        ><button class="tag-button">{{ .LinkTitle }}</button></a
+      >
+      {{ end }} {{ end }}
+    </div>
+    <div class="prev-next-post-links">
+      <div class="previous-container">
+        <span class="previous-label">Prev...</span>
+        {{ with .PrevInSection }}
+        <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
+        {{ end }}
+      </div>
+      <div class="next-container">
+        <span class="next-label">...Next</span>
+        {{ with .NextInSection }}
+        <a class="next" href="{{.Permalink}}"> {{.Title}} </a>
+        {{ end }}
+      </div>
+    </div>
+  </footer>
+</article>
 {{ end }}

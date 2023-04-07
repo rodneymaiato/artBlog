@@ -1,8 +1,6 @@
 {{ define "main"}}
 <main>
   <!--! Ranges through content/posts/*.md -->
-
-  <h2>{{ .Title }}</h2>
   
   <div class="tiles">
     {{ range first 9 (where .Site.RegularPages "Type" "in"
