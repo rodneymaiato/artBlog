@@ -14,7 +14,7 @@
     ).RelPermalink }}" alt="" class="image-holder" /> {{ end }} -->
 
 {{ if (resources.GetMatch .Params.featured_image) }}
-<img src="{{ ((resources.GetMatch .Params.featured_image).Resize `652x webp Smart`).RelPermalink }}" />
+<img src="{{ ((resources.GetMatch .Params.featured_image).Resize `652x webp Smart`).RelPermalink }}" class="image-holder"/>
 {{ end }}
     <!--! Post Content -->
     {{ .Content }}
