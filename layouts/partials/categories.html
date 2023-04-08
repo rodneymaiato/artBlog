@@ -1,0 +1,7 @@
+<main class="main-index">
+  <h2>Categories</h2>
+  <div class="tag-container">
+    {{ range .Site.Taxonomies.categories }}
+        <a href="{{ .Page.Permalink }}" class="tag-link"><button class="tag-button"> {{ .Page.Title }} ({{ .Count }}) </button></a>  
+    {{ end }}</div>
+</main>

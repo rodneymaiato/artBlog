@@ -3,7 +3,7 @@ languageCode: en-us
 title: Rodney Maiato
 enableEmoji: true
 googleAnalytics: G-GZWZCLTZXH
-
+assetDir: static
 
 params:
   author: Rodney Maiato
@@ -18,6 +18,12 @@ menu:
     - name: Posts
       url: /posts
       weight: 10
+    - name: Tags
+      url: /tags
+      weight: 30
+    - name: Categories
+      url: /categories
+      weight: 40
 
 summaryLength: 12 
 

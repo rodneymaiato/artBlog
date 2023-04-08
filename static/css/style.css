@@ -68,6 +68,9 @@ nav {
   text-decoration: underline;
   /* font-weight: bold; */
 }
+.tags {
+  list-style: none;
+}
 /* list page styles */
 .list {
   list-style: none;

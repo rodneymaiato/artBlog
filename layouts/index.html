@@ -6,14 +6,16 @@
     {{ range first 9 (where .Site.RegularPages "Type" "in"
     site.Params.mainSections) }}
 
-    <a href="{{ .Permalink }}">{{ $image := resources.Get (printf "img/%s" .Params.featured_image) }}{{
-      with $image }}<img src="{{ ($image.Fill "200x200 webp" ).RelPermalink }}"
-      alt="art by rodney maiato" class="tiles-img" /></a
-    >{{ end }}
+    <a href="{{ .Permalink }}">
+      
+    {{ if (resources.GetMatch .Params.cover_image) }}
+<img src="{{ ((resources.GetMatch .Params.cover_image).Fill `200x200 wepp Smart q50`).RelPermalink }}" class="tiles-img"/>
+{{ end }}
     {{ end }}
   </div>
 
   {{ .Content}} {{- partial "tags.html" . -}}
 </main>
+
 
 {{ end }}

@@ -1,0 +1,13 @@
+{{ define "main"}}
+<h1>{{ .Title }}</h1>
+
+{{ $taxo := .Title | urlize }}
+<ul class="categories">
+    {{ with ($.Site.GetPage $taxo) }}
+        {{ range sort .Pages "Title" }}
+            <li class="list"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+{{ end }}
