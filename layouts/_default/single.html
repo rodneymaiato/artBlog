@@ -7,11 +7,6 @@
     <strong><p id="date">{{ .Date.Format "Mon Jan 2, 2006" }}</p></strong>
   </div>
   <div class="post-content">
-    <!-- {{ $image := resources.Get (printf "img/%s" .Params.featured_image) }} {{
-    with $image }} 
-    
-    <img src="{{ ($image.Resize " 652x webp Smart q50"
-    ).RelPermalink }}" alt="" class="image-holder" /> {{ end }} -->
 
 {{ if (resources.GetMatch .Params.featured_image) }}
 <img src="{{ ((resources.GetMatch .Params.featured_image).Resize `652x webp Smart`).RelPermalink }}" class="image-holder"/>
@@ -30,20 +25,30 @@
       >
       {{ end }} {{ end }}
     </div>
-    <div class="prev-next-post-links">
+
+{{- partial "post_nav_links.html" . -}}
+
+    <!-- <nav class="page-nav-links">
       <div class="previous-container">
-        <span class="previous-label">Prev...</span>
         {{ with .PrevInSection }}
-        <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
+        <a class="previous" href="{{.Permalink}}"><span class="previous-label">&#xAB Prev</span>
+         <br> 
+         <span>
+          {{.Title}}</span></a>
         {{ end }}
       </div>
       <div class="next-container">
-        <span class="next-label">...Next</span>
+        
         {{ with .NextInSection }}
-        <a class="next" href="{{.Permalink}}"> {{.Title}} </a>
+        <a class="next" href="{{.Permalink}}"><span class="next-label">Next &#xBB</span> 
+          <br>
+          <span>
+          
+          {{.Title}}</span> </a>
+        
         {{ end }}
       </div>
-    </div>
+    </nav> -->
   </footer>
 </article>
 {{ end }}

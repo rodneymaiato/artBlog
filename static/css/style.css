@@ -9,6 +9,10 @@
   --dark: #333;
   --light: #fff;
   --primary-color: midnightblue;
+  --code-bg: rgb(245, 245, 245);
+  --border: rgb(238, 238, 238);
+      --secondary: rgb(108, 108, 108);
+          --radius: 8px;
 }
 
 body {
@@ -47,9 +51,11 @@ a {
   display: flex;
   list-style-type: none;
   justify-content: end;
+  padding: 0.8rem 0;
 }
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
@@ -101,15 +107,15 @@ nav {
   cursor: pointer;
   color: var(--dark);
 }
-hr {
-  border: 0.5px solid rgb(174, 174, 174);
-}
 
 img.logo {
   width: 100px;
+  vertical-align: bottom;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
-.prev-next-post-links {
+.page-nav-links {
   display: flex;
   justify-content: space-between;
 }
@@ -154,4 +160,47 @@ border-radius: 5px;
   margin: 0.25rem 0.1rem 0.25rem 0.1rem;
   padding: 0.25rem 0.5rem;
   line-height: 2;
+}
+
+.share-buttons,
+.paginav {
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+}
+
+.paginav {
+    margin: 10px 0;
+    display: flex;
+    line-height: 30px;
+    border-radius: var(--radius);
+}
+
+.paginav a {
+    padding-inline-start: 14px;
+    padding-inline-end: 14px;
+    border-radius: var(--radius);
+}
+.paginav a:hover {
+    background: var(--border);
+}
+.paginav .title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: small;
+    color: var(--secondary);
+}
+
+.paginav .prev,
+.paginav .next {
+    width: 50%;
+}
+
+.paginav span:hover:not(.title) {
+    box-shadow: 0 1px 0;
+}
+
+.paginav .next {
+    margin-inline-start: auto;
+    text-align: right;
 }
