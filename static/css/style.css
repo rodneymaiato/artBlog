@@ -11,8 +11,8 @@
   --primary-color: midnightblue;
   --code-bg: rgb(245, 245, 245);
   --border: rgb(238, 238, 238);
-      --secondary: rgb(108, 108, 108);
-          --radius: 8px;
+  --secondary: rgb(108, 108, 108);
+  --radius: 8px;
 }
 
 body {
@@ -101,12 +101,6 @@ nav {
   margin-right: 0.25rem;
   margin-bottom: 3rem;
 }
-.tag-button {
-  padding: 0.25rem;
-  margin: 0.25rem 0.25rem 0.25rem 0;
-  cursor: pointer;
-  color: var(--dark);
-}
 
 img.logo {
   width: 100px;
@@ -115,44 +109,20 @@ img.logo {
   margin-right: 2rem;
 }
 
-.page-nav-links {
-  display: flex;
-  justify-content: space-between;
-}
-.previous-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-.next-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-.next-label {
-  text-align: right;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-
-.previous-label {
-  font-size: 0.75rem;
-  font-weight: bold;
-}
 .tiles {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
 }
 .tiles-img {
-width: 100%;
-vertical-align: bottom;
-border-radius: 5px;
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 5px;
 }
 
 .tag-button {
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--code-bg);
+  color: var(--black);
   border-radius: 5px;
   border: none;
   outline: none;
@@ -162,45 +132,46 @@ border-radius: 5px;
   line-height: 2;
 }
 
-.share-buttons,
 .paginav {
-    border-radius: var(--radius);
-    background: var(--code-bg);
-    border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
 }
 
 .paginav {
-    margin: 10px 0;
-    display: flex;
-    line-height: 30px;
-    border-radius: var(--radius);
+  margin: 10px 0;
+  display: flex;
+  line-height: 30px;
+  border-radius: var(--radius);
 }
 
 .paginav a {
-    padding-inline-start: 14px;
-    padding-inline-end: 14px;
-    border-radius: var(--radius);
+  padding-inline-start: 14px;
+  padding-inline-end: 14px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  height: 100%;
 }
 .paginav a:hover {
-    background: var(--border);
+  background: var(--border);
 }
 .paginav .title {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: small;
-    color: var(--secondary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: small;
+  color: var(--secondary);
 }
 
 .paginav .prev,
 .paginav .next {
-    width: 50%;
+  width: 50%;
 }
 
 .paginav span:hover:not(.title) {
-    box-shadow: 0 1px 0;
+  box-shadow: 0 1px 0;
 }
 
 .paginav .next {
-    margin-inline-start: auto;
-    text-align: right;
+  margin-inline-start: auto;
+  text-align: right;
 }
