@@ -10,16 +10,6 @@ Thanks for stopping by! :heart:
 
 I'm Rodney.
 
-I draw, sketch, paint, and play a few musical instruments.
+I create art and play musical instruments, with a deep appreciation for expression over commercial success. 
 
-I'm a huge fan of other artists. A lot of them haven't even made a name for themselves. But for me, it's not about how many prints you sell, how many likes you get, or how much a painting is worth. It's all about expression and how it moves me.
-
-I still draw, paint and play guitar.
-
-I can't imagine giving it up.
-
-Ever.
-
-I grew up in the great city of Montreal, Quebec and was blessed to have been immersed in the French culture. Later in life, I moved to the west coast and I'm grateful to be experiencing that too.
-
-In elementary school, I loved anything to do with art. I always loved music, and I was lucky that my grade 5 teacher gave up some of her free time to give me the three guitar lessons that spawned a lifetime of musical enjoyment.
+Born and raised in Montreal, Quebec, I cherish my French cultural roots. I now reside on the west coast, embracing new experiences. From a young age, I was drawn to art and music, receiving guitar lessons in fifth grade that ignited my lifelong passion for music.
