@@ -6,7 +6,7 @@ featured_image:
 
 Thanks for stopping by! :heart:
 
-![Rodney Maiato](img/202207_9.jpg)
+![Rodney Maiato](img/self-portrait-28032024.jpg)
 
 I'm Rodney.
 
