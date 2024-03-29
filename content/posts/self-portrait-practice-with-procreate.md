@@ -5,7 +5,7 @@ cover_image: img/self-portrait-28032024.jpg
 featured_image: img/self-portrait-28032024.jpg
 draft: false
 categories:
-tags: [self-portrait]
+tags: ["self-portrait", "procreate", "digital art"]
 ---
 Getting better with every practice session!
 
