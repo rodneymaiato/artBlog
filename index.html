@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rodney Maiato — Sketches and paintings from Moleskine sketchbooks">
+  <title>Rodney Maiato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-name" href="index.html">Rodney Maiato</a>
+  <nav class="site-nav">
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="intro">
+  <p>Sketches and paintings — mostly from Moleskine sketchbooks.</p>
+</div>
+
+<main>
+  <div class="gallery">
+
+    <button class="gallery-item" onclick="openWork('procreate-portrait')">
+      <img src="static/img/self-portrait-28032024.JPG" alt="Self Portrait Practice With Procreate" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Self Portrait Practice With Procreate</span>
+        <span class="item-tags">self-portrait · procreate · digital art</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('lamppost')">
+      <img src="static/img/lamp_post.jpeg" alt="Lamppost in Gouache" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Lamppost in Gouache</span>
+        <span class="item-tags">gouache · plein air</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('ucluelet')">
+      <img src="static/img/202211_4.jpg" alt="Painting in Ucluelet" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Painting in Ucluelet</span>
+        <span class="item-tags">plein air · watercolour · gouache</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('clock')">
+      <img src="static/img/202211_7.jpg" alt="80 Year Old Clock Still Works" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">80 Year Old Clock Still Works</span>
+        <span class="item-tags">gouache · moleskine sketchbook</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('chair')">
+      <img src="static/img/202204_2.jpg" alt="Gouache Painting of a Chair" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Gouache Painting of a Chair</span>
+        <span class="item-tags">gouache</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('river-road')">
+      <img src="static/img/202210_1.jpg" alt="Sketching During River Road Bike Ride" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Sketching During River Road Bike Ride</span>
+        <span class="item-tags">watercolour · pen and ink</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('cathedral')">
+      <img src="static/img/202111_2.jpg" alt="The Queen Mary Cathedral in Montreal" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">The Queen Mary Cathedral in Montreal</span>
+        <span class="item-tags">ink · markers</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('octopus')">
+      <img src="static/img/202111_4.jpg" alt="My Octopus Teacher" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">My Octopus Teacher</span>
+        <span class="item-tags">ink and watercolor</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('deer-lake')">
+      <img src="static/img/202111_1.jpg" alt="Deer Lake Quiet Stream" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Deer Lake Quiet Stream</span>
+        <span class="item-tags">pen and ink</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('monochrome-portrait')">
+      <img src="static/img/202208_1.jpg" alt="Monochrome Self Portrait" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Monochrome Self Portrait</span>
+        <span class="item-tags">digital art · self-portrait · procreate</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('parc-extension')">
+      <img src="static/img/202107_5.jpg" alt="Parc Extension Where I Grew Up" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Parc Extension Where I Grew Up</span>
+        <span class="item-tags">ink and watercolor</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('early-morning')">
+      <img src="static/img/202106_5.jpg" alt="Early Morning Sketching" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Early Morning Sketching</span>
+        <span class="item-tags">ink and wash</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('dark-portrait')">
+      <img src="static/img/202105_26.jpg" alt="Dark Self Portrait" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Dark Self Portrait</span>
+        <span class="item-tags">ink and watercolor · self-portrait</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('central-park')">
+      <img src="static/img/202110_6.jpg" alt="Central Park Burnaby Autumn" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Central Park Burnaby Autumn</span>
+        <span class="item-tags">ink and watercolor</span>
+      </div>
+    </button>
+
+    <button class="gallery-item" onclick="openWork('lessons-portraits')">
+      <img src="static/img/202109_14.jpg" alt="Lessons From Self Portraits" loading="lazy">
+      <div class="item-overlay">
+        <span class="item-title">Lessons From Self Portraits</span>
+        <span class="item-tags">self-portrait · ink · markers</span>
+      </div>
+    </button>
+
+  </div>
+</main>
+
+
+<!-- ── Lightbox dialogs ── -->
+
+<dialog id="procreate-portrait">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/self-portrait-28032024.JPG" alt="Self Portrait Practice With Procreate" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Self Portrait Practice With Procreate</h2>
+      <p class="dialog-tags">self-portrait · procreate · digital art</p>
+      <div class="dialog-text">
+        <p>Getting better with every practice session!</p>
+        <p>When I kick back on the couch post-work, it's a no-brainer to grab my iPad, fire up Procreate, slap on a reference photo, and just roll with it.</p>
+        <p>Procreate's got some cool perks, like flipping your work around in a flash and checking it out in grayscale real quick.</p>
+        <p>I'm all about painting over mistakes instead of hitting that undo button — it's all part of the journey, right?</p>
+        <p>Here's the same image in grayscale.</p>
+      </div>
+      <img src="static/img/self-portrait-monochrome.jpg" alt="Self-portrait in grayscale" class="dialog-extra-img">
+    </div>
+  </div>
+</dialog>
+
+<dialog id="lamppost">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/lamp_post.jpeg" alt="Lamppost in Gouache" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Lamppost in Gouache</h2>
+      <p class="dialog-tags">gouache · plein air</p>
+      <div class="dialog-text">
+        <p>This sketch in gouache was done on a sunny day but it looks like a night painting. I guess this is what happens when you lay off painting for a few months.</p>
+        <p>The colors are too dark and too cold.</p>
+        <p>I will return to this spot and try again. I'll make sure to take a photo for comparison later on.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="ucluelet">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202211_4.jpg" alt="Painting in Ucluelet" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Painting in Ucluelet</h2>
+      <p class="dialog-tags">plein air · watercolour · gouache</p>
+      <div class="dialog-text">
+        <p>Here's what I saw from our room with a view.</p>
+        <p>This is the furthest west that I've ever been. By far, one of the most beautiful places that I've ever seen in Canada.</p>
+        <p>Next time I go back, I'll make sure to paint more.</p>
+        <p>Below is the right side of the landscape Moleskine watercolour sketchbook in a 8.25&Prime; &times; 5&Prime; size.</p>
+      </div>
+      <img src="static/img/202211_3.jpg" alt="Ucluelet landscape sketch" class="dialog-extra-img">
+      <img src="static/img/202211_1.jpg" alt="Ferry sketch" class="dialog-extra-img">
+    </div>
+  </div>
+</dialog>
+
+<dialog id="clock">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202211_7.jpg" alt="80 Year Old Clock Still Works" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>80 Year Old Clock Still Works</h2>
+      <p class="dialog-tags">gouache · moleskine sketchbook</p>
+      <div class="dialog-text">
+        <p>This clock is over 80 years old. My step dad acquired it in the 1980s.</p>
+        <p>I doubt an Apple watch could last 80 years.</p>
+        <p>Below is the actual clock, and converted to grayscale to better analyze values. It's not too bad, but another sketch in gouache is another lesson learned.</p>
+      </div>
+      <img src="static/img/202211_6.jpg" alt="The actual clock" class="dialog-extra-img">
+      <img src="static/img/202211_5.jpg" alt="Clock in grayscale" class="dialog-extra-img">
+    </div>
+  </div>
+</dialog>
+
+<dialog id="chair">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202204_2.jpg" alt="Gouache Painting of a Chair" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Gouache Painting of a Chair</h2>
+      <p class="dialog-tags">gouache</p>
+      <div class="dialog-text">
+        <p>I painted this chair a year ago today.</p>
+        <p>I bought this chair for $30 about 30 years ago from the Delta hotel in Montreal when they were liquidating old furniture. I reupholstered the seat and it's still a great chair that's made of solid wood.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="river-road">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202210_1.jpg" alt="Sketching During River Road Bike Ride" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Sketching During River Road Bike Ride</h2>
+      <p class="dialog-tags">watercolour · pen and ink</p>
+      <div class="dialog-text">
+        <p>I went on a bike ride with my wife on a beautiful sunny Saturday afternoon and I decided to take a sketchbook and watercolour palette box.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="cathedral">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202111_2.jpg" alt="The Queen Mary Cathedral in Montreal" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>The Queen Mary Cathedral in Montreal</h2>
+      <p class="dialog-tags">ink · markers</p>
+      <div class="dialog-text">
+        <p>Done with Faber Castell Pitt Artist Pens and fountain pen in a Rhodia notebook.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="octopus">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202111_4.jpg" alt="My Octopus Teacher" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>My Octopus Teacher</h2>
+      <p class="dialog-tags">ink and watercolor</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="deer-lake">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202111_1.jpg" alt="Deer Lake Quiet Stream" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Deer Lake Quiet Stream</h2>
+      <p class="dialog-tags">pen and ink</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="monochrome-portrait">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202208_1.jpg" alt="Monochrome Self Portrait" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Monochrome Self Portrait</h2>
+      <p class="dialog-tags">digital art · self-portrait · procreate</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="parc-extension">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202107_5.jpg" alt="Parc Extension Where I Grew Up" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Parc Extension Where I Grew Up</h2>
+      <p class="dialog-tags">ink and watercolor</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="early-morning">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202106_5.jpg" alt="Early Morning Sketching" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Early Morning Sketching</h2>
+      <p class="dialog-tags">ink and wash</p>
+      <div class="dialog-text">
+        <p>Sometimes I'll sketch the same view repeatedly.</p>
+        <p>It helps you see new details with every sketch.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="dark-portrait">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202105_26.jpg" alt="Dark Self Portrait" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Dark Self Portrait</h2>
+      <p class="dialog-tags">ink and watercolor · self-portrait</p>
+      <div class="dialog-text">
+        <p>Self portrait created with mixed media.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="central-park">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202110_6.jpg" alt="Central Park Burnaby Autumn" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Central Park Burnaby Autumn</h2>
+      <p class="dialog-tags">ink and watercolor</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="lessons-portraits">
+  <div class="dialog-header">
+    <button class="dialog-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="dialog-scroll">
+    <img src="static/img/202109_14.jpg" alt="Lessons From Self Portraits" class="dialog-main-img">
+    <div class="dialog-meta">
+      <h2>Lessons From Self Portraits</h2>
+      <p class="dialog-tags">self-portrait · ink · markers</p>
+    </div>
+  </div>
+</dialog>
+
+
+<footer>
+  <p>&copy; Rodney Maiato</p>
+</footer>
+
+<script>
+  function openWork(id) {
+    document.getElementById(id).showModal();
+  }
+
+  document.querySelectorAll('dialog').forEach(dialog => {
+    // Close when clicking the backdrop (outside the dialog box)
+    dialog.addEventListener('click', e => {
+      if (e.target === dialog) dialog.close();
+    });
+    // Close button
+    const btn = dialog.querySelector('.dialog-close');
+    if (btn) btn.addEventListener('click', () => dialog.close());
+  });
+</script>
+
+</body>
+</html>
