@@ -1,7 +1,0 @@
-<main class="main-index">
-  <h2>Tags</h2>
-  <div class="tag-container">
-    {{ range .Site.Taxonomies.tags }}
-        <a href="{{ .Page.Permalink }}" class="tag-link"><button class="tag-button"> {{ .Page.Title }} ({{ .Count }}) </button></a>  
-    {{ end }}</div>
-</main>
