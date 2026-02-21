@@ -12,8 +12,11 @@ Pure static HTML — no build step, no framework, no dependencies.
 
 - `index.html` — gallery page
 - `about.html` — about page
+- `contact.html` — contact form (Netlify Forms)
 - `style.css` — all styles
+- `favicon.svg` — RM initials favicon
 - `static/img/` — all artwork images
+- `add-artwork.html` — local helper tool (not in git, see below)
 
 ---
 
@@ -36,6 +39,25 @@ Then open `http://localhost:3000` (or whatever port is shown).
 ---
 
 ## Adding a New Artwork
+
+### Using the local helper tool (recommended)
+
+`add-artwork.html` is a local tool that generates the HTML for you — open it in any browser:
+
+```
+open add-artwork.html
+```
+
+Fill in the image filename, title, tags, an optional description, and any extra images (process shots, grayscale versions, etc.). Hit **Generate HTML** and you'll get two ready-to-paste code blocks:
+
+1. **Gallery card** — paste inside `<div class="gallery">` in `index.html`
+2. **Dialog / lightbox** — paste before `<footer>` in `index.html`
+
+> `add-artwork.html` is excluded from git and stays on your local machine only.
+
+---
+
+### Manually
 
 Adding a new piece takes three steps: add the image, add a gallery card, add a lightbox dialog.
 
