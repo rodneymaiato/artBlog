@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Rodney Maiato">
+  <title>Contact — Rodney Maiato</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Rodney Maiato">
+  <meta property="og:description" content="Get in touch with Rodney Maiato.">
+  <meta property="og:url" content="https://rodneymaiato.art/contact.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-wrap {
+      max-width: 540px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .contact-wrap h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-wrap .contact-intro {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background: var(--surface);
+      border: 1px solid #2a2a2a;
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 0.9rem;
+      padding: 0.65rem 0.85rem;
+      width: 100%;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    .form-submit {
+      background: var(--accent);
+      border: none;
+      border-radius: var(--radius);
+      color: #0f0f0f;
+      cursor: pointer;
+      font-family: var(--font);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 0.75rem 1.5rem;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+      align-self: flex-start;
+    }
+
+    .form-submit:hover { opacity: 0.85; }
+
+    @media (max-width: 640px) {
+      .contact-wrap { margin: 2rem auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-name" href="index.html">Rodney Maiato</a>
+  <nav class="site-nav">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="contact-wrap">
+    <h1>Contact</h1>
+    <p class="contact-intro">Have a question or want to get in touch? Send a message below.</p>
+
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Message</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; Rodney Maiato</p>
+</footer>
+
+</body>
+</html>
