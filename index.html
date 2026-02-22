@@ -439,13 +439,52 @@
     }
 
     document.querySelectorAll('dialog').forEach(dialog => {
-      // Close when clicking the backdrop (outside the dialog box)
       dialog.addEventListener('click', e => {
         if (e.target === dialog) dialog.close();
       });
-      // Close button
       const btn = dialog.querySelector('.dialog-close');
       if (btn) btn.addEventListener('click', () => dialog.close());
+    });
+
+    // Prev/next navigation
+    const works = [
+      'procreate-portrait', 'lamppost', 'ucluelet', 'clock', 'chair',
+      'river-road', 'cathedral', 'octopus', 'deer-lake', 'monochrome-portrait',
+      'parc-extension', 'early-morning', 'dark-portrait', 'central-park', 'lessons-portraits'
+    ];
+
+    works.forEach((id, i) => {
+      const dialog = document.getElementById(id);
+      const header = dialog.querySelector('.dialog-header');
+      const closeBtn = header.querySelector('.dialog-close');
+
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'dialog-nav';
+      prevBtn.setAttribute('aria-label', 'Previous artwork');
+      prevBtn.innerHTML = '&#x2190;';
+      if (i === 0) prevBtn.disabled = true;
+      prevBtn.addEventListener('click', () => { dialog.close(); openWork(works[i - 1]); });
+
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'dialog-nav';
+      nextBtn.setAttribute('aria-label', 'Next artwork');
+      nextBtn.innerHTML = '&#x2192;';
+      if (i === works.length - 1) nextBtn.disabled = true;
+      nextBtn.addEventListener('click', () => { dialog.close(); openWork(works[i + 1]); });
+
+      header.insertBefore(prevBtn, closeBtn);
+      header.appendChild(nextBtn);
+    });
+
+    // Arrow key support
+    document.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      const open = document.querySelector('dialog[open]');
+      if (!open) return;
+      const i = works.indexOf(open.id);
+      if (i === -1) return;
+      if (e.key === 'ArrowLeft' && i > 0) { open.close(); openWork(works[i - 1]); }
+      if (e.key === 'ArrowRight' && i < works.length - 1) { open.close(); openWork(works[i + 1]); }
     });
   </script>
 

@@ -159,7 +159,8 @@ dialog::backdrop {
 
 .dialog-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.75rem 0.75rem 0;
   flex-shrink: 0;
 }
@@ -183,6 +184,32 @@ dialog::backdrop {
 .dialog-close:hover {
   background: rgba(255,255,255,0.15);
   color: var(--text);
+}
+
+.dialog-nav {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+
+.dialog-nav:hover:not(:disabled) {
+  background: rgba(255,255,255,0.15);
+  color: var(--text);
+}
+
+.dialog-nav:disabled {
+  opacity: 0.2;
+  cursor: default;
 }
 
 .dialog-scroll {
